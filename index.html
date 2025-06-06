@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tonight's Band Name Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎸 Tonight's Band Name Generator 🎸</h1>
+            <p>Get three unique band names for tonight's performance!</p>
+        </header>
+        
+        <main>
+            <button id="generateButton" class="big-red-button">
+                Generate Band Names
+            </button>
+            
+            <div id="bandNames" class="band-names-container hidden">
+                <h2>Tonight's Options:</h2>
+                <div class="band-name-list">
+                    <div class="band-name" id="name1"></div>
+                    <div class="band-name" id="name2"></div>
+                    <div class="band-name" id="name3"></div>
+                </div>
+                <button id="generateAgain" class="generate-again-button">
+                    Generate New Names
+                </button>
+            </div>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

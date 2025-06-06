@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    max-width: 90%;
+    width: 400px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+.big-red-button {
+    background: linear-gradient(45deg, #ff416c, #ff4757);
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 25px 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(255, 65, 108, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.big-red-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(255, 65, 108, 0.6);
+}
+
+.big-red-button:active {
+    transform: translateY(0);
+}
+
+.band-names-container {
+    margin-top: 40px;
+    animation: fadeIn 0.5s ease-in;
+}
+
+.band-names-container.hidden {
+    display: none;
+}
+
+.band-names-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    color: #fff;
+}
+
+.band-name-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.band-name {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.band-name:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.02);
+}
+
+.generate-again-button {
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 25px;
+    color: white;
+    font-size: 1.1rem;
+    padding: 12px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.generate-again-button:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    .big-red-button {
+        font-size: 1.3rem;
+        padding: 20px 40px;
+    }
+    
+    .band-name {
+        font-size: 1.1rem;
+        padding: 15px;
+    }
+    
+    .container {
+        padding: 15px;
+    }
+}
