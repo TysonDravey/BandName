@@ -100,7 +100,7 @@ async function handleGenerate() {
         const theme = themeInput ? themeInput.value.trim() : '';
         
         // Try to get names from Claude API first
-        const response = await fetch('https://band-name-a3xn2mpla-tysondraveys-projects.vercel.app/api/generate-names', {
+        const response = await fetch('https://band-name-1bovjbh52-tysondraveys-projects.vercel.app/api/generate-names', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
