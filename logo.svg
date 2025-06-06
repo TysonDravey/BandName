@@ -1,0 +1,46 @@
+<svg width="400" height="120" viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff416c"/>
+      <stop offset="50%" style="stop-color:#ff6b9d"/>
+      <stop offset="100%" style="stop-color:#764ba2"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Guitar silhouette -->
+  <g transform="translate(20, 20)">
+    <!-- Guitar body -->
+    <ellipse cx="25" cy="50" rx="20" ry="30" fill="url(#textGrad)" opacity="0.8"/>
+    <!-- Guitar neck -->
+    <rect x="45" y="47" width="25" height="6" fill="url(#textGrad)" opacity="0.8"/>
+    <!-- Guitar head -->
+    <rect x="68" y="45" width="8" height="10" fill="url(#textGrad)" opacity="0.8"/>
+    <!-- Strings -->
+    <line x1="45" y1="48" x2="70" y2="48" stroke="white" stroke-width="0.5"/>
+    <line x1="45" y1="50" x2="70" y2="50" stroke="white" stroke-width="0.5"/>
+    <line x1="45" y1="52" x2="70" y2="52" stroke="white" stroke-width="0.5"/>
+  </g>
+  
+  <!-- Main text -->
+  <text x="100" y="45" font-family="Arial Black, Arial" font-size="28" font-weight="900" fill="url(#textGrad)" filter="url(#glow)">BAND NAME</text>
+  <text x="100" y="75" font-family="Arial Black, Arial" font-size="28" font-weight="900" fill="url(#textGrad)" filter="url(#glow)">GENERATOR</text>
+  
+  <!-- Decorative elements -->
+  <circle cx="350" cy="30" r="3" fill="#ff416c" opacity="0.6"/>
+  <circle cx="365" cy="45" r="2" fill="#764ba2" opacity="0.6"/>
+  <circle cx="380" cy="60" r="4" fill="#ff6b9d" opacity="0.6"/>
+  
+  <!-- Sound waves -->
+  <g stroke="white" stroke-width="2" fill="none" opacity="0.3">
+    <path d="M 320 40 Q 330 35 340 40"/>
+    <path d="M 320 50 Q 335 45 350 50"/>
+    <path d="M 320 60 Q 330 65 340 60"/>
+  </g>
+</svg>
