@@ -86,13 +86,10 @@ function displayBandNames(names, isFromClaude = false, isFallback = false) {
 
 async function handleGenerate() {
     const generateButton = document.getElementById('generateButton');
-    const generateAgainButton = document.getElementById('generateAgain');
     
     // Show loading state
     generateButton.disabled = true;
-    generateAgainButton.disabled = true;
     generateButton.textContent = 'Generating...';
-    generateAgainButton.textContent = 'Generating...';
     
     try {
         // Get theme from input
@@ -120,18 +117,16 @@ async function handleGenerate() {
         const names = generateThreeBandNames();
         displayBandNames(names, false);
     } finally {
-        // Reset button states
+        // Reset button state
         generateButton.disabled = false;
-        generateAgainButton.disabled = false;
         generateButton.textContent = 'Generate Band Names';
-        generateAgainButton.textContent = 'Generate New Names';
     }
 }
 
 document.addEventListener('DOMContentLoaded', function() {
     const generateButton = document.getElementById('generateButton');
-    const generateAgainButton = document.getElementById('generateAgain');
     
-    generateButton.addEventListener('click', handleGenerate);
-    generateAgainButton.addEventListener('click', handleGenerate);
+    if (generateButton) {
+        generateButton.addEventListener('click', handleGenerate);
+    }
 });
