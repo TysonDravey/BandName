@@ -32,7 +32,9 @@ export default async function handler(req, res) {
         max_tokens: 200,
         messages: [{
           role: 'user',
-          content: `Generate exactly 3 unique, creative band names for tonight's performance. Make them catchy, memorable, and suitable for any music genre. Return them as a simple JSON array like this: ["Band Name 1", "Band Name 2", "Band Name 3"]. No other text or explanation, just the JSON array.`
+          content: req.body.theme 
+            ? `Generate exactly 3 unique, creative band names for tonight's performance inspired by this theme: "${req.body.theme}". Make them catchy, memorable, and cleverly incorporate or riff on the theme. Return them as a simple JSON array like this: ["Band Name 1", "Band Name 2", "Band Name 3"]. No other text or explanation, just the JSON array.`
+            : `Generate exactly 3 unique, creative band names for tonight's performance. Make them catchy, memorable, and suitable for any music genre. Return them as a simple JSON array like this: ["Band Name 1", "Band Name 2", "Band Name 3"]. No other text or explanation, just the JSON array.`
         }]
       })
     });

@@ -95,12 +95,17 @@ async function handleGenerate() {
     generateAgainButton.textContent = 'Generating...';
     
     try {
+        // Get theme from input
+        const themeInput = document.getElementById('themeInput');
+        const theme = themeInput ? themeInput.value.trim() : '';
+        
         // Try to get names from Claude API first
         const response = await fetch('https://band-name-a3xn2mpla-tysondraveys-projects.vercel.app/api/generate-names', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
-            }
+            },
+            body: JSON.stringify({ theme })
         });
         
         if (response.ok) {
