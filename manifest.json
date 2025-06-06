@@ -1,0 +1,16 @@
+{
+  "name": "Tonight's Band Name Generator",
+  "short_name": "Band Names",
+  "description": "Generate unique band names for tonight's performance",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#667eea",
+  "theme_color": "#667eea",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
