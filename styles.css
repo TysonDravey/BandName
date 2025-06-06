@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #1a1a1a 0%, #333333 50%, #660000 100%);
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -54,7 +54,7 @@ header p {
     padding: 12px 16px;
     border: 2px solid rgba(255, 255, 255, 0.3);
     border-radius: 25px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.3);
     color: white;
     font-size: 1rem;
     backdrop-filter: blur(10px);
@@ -68,13 +68,13 @@ header p {
 }
 
 .theme-input-container input:focus {
-    border-color: rgba(255, 255, 255, 0.6);
-    background: rgba(255, 255, 255, 0.15);
+    border-color: #cc0000;
+    background: rgba(0, 0, 0, 0.5);
     transform: scale(1.02);
 }
 
 .big-red-button {
-    background: linear-gradient(45deg, #ff416c, #ff4757);
+    background: linear-gradient(45deg, #cc0000, #ff3333);
     border: none;
     border-radius: 50px;
     color: white;
@@ -83,14 +83,14 @@ header p {
     padding: 25px 50px;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 8px 25px rgba(255, 65, 108, 0.4);
+    box-shadow: 0 8px 25px rgba(204, 0, 0, 0.4);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
 .big-red-button:hover {
     transform: translateY(-3px);
-    box-shadow: 0 12px 35px rgba(255, 65, 108, 0.6);
+    box-shadow: 0 12px 35px rgba(204, 0, 0, 0.6);
 }
 
 .big-red-button:active {
@@ -122,13 +122,13 @@ header p {
 }
 
 .source-indicator.claude {
-    background: linear-gradient(45deg, #4CAF50, #45a049);
+    background: linear-gradient(45deg, #cc0000, #ff3333);
     color: white;
 }
 
 .source-indicator.local {
-    background: rgba(255, 193, 7, 0.8);
-    color: #333;
+    background: rgba(64, 64, 64, 0.8);
+    color: white;
 }
 
 .band-name-list {
@@ -139,7 +139,7 @@ header p {
 }
 
 .band-name {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.3);
     border: 2px solid rgba(255, 255, 255, 0.2);
     border-radius: 15px;
     padding: 20px;
@@ -150,7 +150,8 @@ header p {
 }
 
 .band-name:hover {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(204, 0, 0, 0.2);
+    border-color: #cc0000;
     transform: scale(1.02);
 }
 
