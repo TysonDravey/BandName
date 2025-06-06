@@ -68,8 +68,27 @@ header p {
 
 .band-names-container h2 {
     font-size: 1.8rem;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     color: #fff;
+}
+
+.source-indicator {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.source-indicator.claude {
+    background: linear-gradient(45deg, #4CAF50, #45a049);
+    color: white;
+}
+
+.source-indicator.local {
+    background: rgba(255, 193, 7, 0.8);
+    color: #333;
 }
 
 .band-name-list {

@@ -1,0 +1,13 @@
+{
+  "name": "band-name-generator",
+  "version": "1.0.0",
+  "description": "A band name generator that uses Claude AI",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel --prod"
+  },
+  "keywords": ["band", "music", "generator", "ai"],
+  "author": "TysonDravey",
+  "license": "MIT"
+}
